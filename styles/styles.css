@@ -383,14 +383,9 @@ span {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .project-card h2 {
-    color: #1a1a1a;
+    color: #ffe0b5;
     font-size: 1.3rem;
     margin-bottom: 1rem;
-}
-.project-card p {
-    font-size: 1.4rem;
-    color: #555;
-    margin-bottom: 1.5rem;
 }
 .project-card img {
     width: 100%;
@@ -445,11 +440,11 @@ span {
     color: #f8f8f8;
 }
 .modal p{
-    font-size: 1rem;
+    font-size: .9rem;
 }
 .modal h2{
     color: #c96b00;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .modal-close {
     position: absolute;
@@ -471,7 +466,6 @@ span {
     width:90%;
     margin-bottom: 30px;
 }
-
 .container-modal {
     display: flex;
     align-items: center;
@@ -481,7 +475,7 @@ span {
     border-radius: 20px;
     width:90%;
     padding: 80px 30px 80px 30px;
-    height: auto;
+    height: 80vh;
     
 }
 
