@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaylan Souza Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/mediaquery.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <span id="menu-bars" class="menu-icon">&#9776;</span>
+            <ul class="nav-links">
+                <h1 id="title-android">Bem-vindo ao meu portfolio 😎</h1>
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div>
+                <button id="languageToggle">PT/EN</button>
+                <button id="themeToggle">Dark/Light</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="js-section">
+            <div class="container-profile ">
+                <div class="banner">
+                    <div class="intro">
+                        <div class="title">
+                            <h2>Olá, eu sou o</h2>
+                            <span>Kaylan Souza 😺</span>
+                            <p>Desenvolvedor Full-Stack</p>
+                        </div>
+                        <div class="actions">
+                            <a href="img/CurriculoKaylanSouza.pdf" target="_blank">Download CV</a>
+                            <a href="https://api.whatsapp.com/send?phone=5528999087714&text=Ol%C3%A1%20Kaylan!%20vi%20seu%20portf%C3%B3lio..."
+                                target="_blank">Entrar em contato</a>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="assets/img/Imagem1-removebg-preview.png" alt="Foto Kaylan">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h1>Sobre Mim</h1>
+                <p id="paragraph-about">Olá! Eu sou Kaylan Souza. Comecei minha jornada estudando HTML, CSS e
+                    JavaScript, e aos poucos fui explorando outras tecnologias de acordo com as demandas do mercado e
+                    com as quais me identificava. Tenho experiência em atendimento ao cliente, otimização de processos
+                    de trabalho e adaptação a diferentes tecnologias.</p>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <h1>Habilidades</h1>
+            <div class="cards">
+                <div class="box">
+                    <p>HTML5</p>
+                    <i class='bx bxl-html5'></i>
+                </div>
+
+                <div class="box">
+                    <p>CSS3</p>
+                    <i class='bx bxl-css3'></i>
+                </div>
+
+                <div class="box">
+                    <p>JavaScript</p>
+                    <i class='bx bxl-javascript'></i>
+                </div>
+
+                <div class="box">
+                    <p>TypeScript</p>
+                    <i class='bx bxl-typescript'></i>
+                </div>
+
+                <div class="box">
+                    <p>Angular</p>
+                    <i class='bx bxl-angular'></i>
+                </div>
+
+                <div class="box">
+                    <p>React</p>
+                    <i class='bx bxl-react'></i>
+                </div>
+
+                <div class="box">
+                    <p>Bootstrap</p>
+                    <i class='bx bxl-bootstrap'></i>
+                </div>
+
+                <div class="box">
+                    <p>Java</p>
+                    <i class='bx bxl-java'></i>
+                </div>
+
+                <div class="box">
+                    <p>PHP</p>
+                    <i class='bx bxl-php'></i>
+                </div>
+
+                <div class="box">
+                    <p>Spring Boot</p>
+                    <i class='bx bxl-spring-boot'></i>
+                </div>
+
+                <div class="box">
+                    <p>Mysql</p>
+                    <i class='bx bxl-postgresql'></i>
+                </div>
+
+                <div class="box">
+                    <p>Mongodb</p>
+                    <i class='bx bxl-mongodb'></i>
+                </div>
+
+                <div class="box">
+                    <p>Jquery</p>
+                    <i class='bx bxl-jquery'></i>
+                </div>
+
+                <div class="box">
+                    <p>Wordpress</p>
+                    <i class='bx bxl-wordpress'></i>
+                </div>
+
+                <div class="box">
+                    <p>Figma</p>
+                    <i class='bx bxl-figma'></i>
+                </div>
+
+                <div class="box">
+                    <p>NodeJs</p>
+                    <i class='bx bxl-nodejs'></i>
+                </div>
+
+                <div class="box">
+                    <p>Python</p>
+                    <i class='bx bxl-python'></i>
+                </div>
+
+                <div class="box">
+                    <p>Git</p>
+                    <i class='bx bxl-github'></i>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h1>Principais Projetos</h1>
+                <div class="filter-menu">
+                    <label for="technology">Filtrar por Tecnologia:</label>
+                    <select id="technology">
+                        <option value="all">Todas as Tecnologias</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="angular">Angular</option>
+                        <option value="php">PHP</option>
+                        <option value="nodejs">NodeJS</option>
+                        <option value="bootstrap">Bootstrap</option>
+                        <option value="jquery">Jquery</option>
+                        <option value="banco de dados">Banco de Dados</option>
+                    </select>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-technologies="html, css, javascript">
+                        <img src="assets/img/imagemCobrinha.png" alt="Project 1">
+                        <h2>Jogo da Cobrinha </h2>
+                    </div>
+                    <div class="modal" id="modal-project-1">
+                        <div class="container-modal">
+                            <div class="content-modal-video">
+                                <video class="js-player" controls>
+                                    <source src="assets/videos/Jogo da cobrinha - Google Chrome 2023-11-28 21-15-19.mp4"
+                                        type="video/mp4">
+                                    Seu navegador não suporta vídeo HTML5.
+                                </video>
+                                <div class="buttons-modal">
+                                    <a href="https://github.com/Kaylan00/JogoDaCobrinha-javascript.git"
+                                        target="_blank">Acessar repositório</a>
+                                    <a href="https://kaylan00.github.io/JogoDaCobrinha-javascript/" target="_blank">Ver
+                                        projeto web</a>
+                                </div>
+                            </div>
+                            <div class="content-modal-text">
+                                <div id="div-title-modal">
+                                    <h2>Jogo da cobrinha</h2>
+                                    <span class="modal-close">&times;</span>
+                                </div>
+                                <p>Jogo da cobrinha feito com html, css javascript, mostrando a pontuação,
+                                    podendo abrir o histórico, apagar, alem de poder colocar no modo fácil, médio ou
+                                    difícil, o jogo ainda é responviso! ou seja funciona perfeitamente para celular,
+                                    ja se alientando ao scroll no mobile para nao estragar a jogabilidade! <br><br>
+
+                                    Esse projeto foi desenvolvido com as seguintes ferramentas: <br><br>
+
+                                    • HTML5; <br>
+                                    • CSS3; <br>
+                                    • Vanilla JavaScript; <br>
+                                    • LocalStorage API; <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-technologies="html, css, javascript">
+                        <img src="assets/img/imagemCalculadora.png" alt="Project 1">
+                        <h2>Calculadora com Javascript</h2>
+                    </div>
+                    <div class="modal" id="modal-project-2">
+                        <div class="container-modal">
+                            <div class="content-modal-video">
+                                <video class="js-player" controls>
+                                    <source src="assets/videos/Projeto Calculadora.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeo HTML5.
+                                </video>
+                                <div class="buttons-modal">
+                                    <a href="https://github.com/Kaylan00/CalculadoraJS.git" target="_blank">Acessar
+                                        repositório</a>
+                                    <a href="https://kaylan00.github.io/CalculadoraJS/" target="_blank">Ver projeto
+                                        web</a>
+                                </div>
+                            </div>
+                            <div class="content-modal-text">
+                                <div id="div-title-modal">
+                                    <h2>Calculadora JS</h2>
+                                    <span class="modal-close">&times;</span>
+                                </div>
+                                <p>Calculadora feita com javascript, com opçoes de excluir tudo sem precisar
+                                    ficar clicando, fazer calculos com parênteses, fazer calculos básicos,
+                                    calcular procentagens, trocar a cor do tema, fazer calculos com numeros
+                                    decimais! <br><br>
+
+                                    Esse projeto foi desenvolvido com as seguintes ferramentas: <br><br>
+
+                                    • HTML5; <br>
+                                    • CSS3; <br>
+                                    • Vanilla JavaScript; <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card"
+                        data-technologies="html, css, javascript, typeScript, angular, adonnisjs, banco de dados">
+                        <img src="assets/img/imagemAngular.png" alt="Project 1">
+                        <h2>Rede Social Angular</h2>
+                    </div>
+                    <div class="modal" id="modal-project-3">
+                        <div class="container-modal">
+                            <div class="content-modal-video">
+                                <video class="js-player" controls>
+                                    <source src="assets/videos/seeyouAngular.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeo HTML5.
+                                </video>
+                                <div class="buttons-modal">
+                                    <a href="https://github.com/Kaylan00/ProjetoRedeSocial_angular.git"
+                                        target="_blank">Acessar repositório</a>
+                                    <a href="https://www.linkedin.com/posts/kaylansouza_projeto-rede-social-com-estiliza%C3%A7%C3%B5es-simples-activity-7114775382364422144-lU8p?utm_source=share&utm_medium=member_desktop"
+                                        target="_blank">Ver no Linkedin</a>
+                                </div>
+                            </div>
+                            <div class="content-modal-text">
+                                <div id="div-title-modal">
+                                    <h2>Rede social Angular</h2>
+                                    <span class="modal-close">&times;</span>
+                                </div>
+                                <p>Projeto rede social feito com angular e adonnisJS, tendo uma api rest
+                                    desenvolvida por mim, no projeto há possibilidades de:
+                                    postar imagens, excluir, adicionar descrição, editar descrição ou imagem,
+                                    comentar nas publicações, editar comentarios e excluir comentarios!
+                                    <br><br>
+
+                                    Esse projeto foi desenvolvido com as seguintes ferramentas: <br><br>
+
+                                    • Angular <br>
+                                    • HTML5 <br>
+                                    • CSS3 <br>
+                                    • Vanilla JavaScript; <br>
+                                    • TypeScript <br>
+                                    • AdonnisJS <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-technologies="html, css, php, banco de dados, bootstrap">
+                        <img src="assets/img/imagemPHP.png" alt="Project 4">
+                        <h2>Painel plataforma de cursos</h2>
+                    </div>
+                    <div class="modal" id="modal-project-4">
+                        <div class="container-modal">
+                            <div class="content-modal-video">
+                                <video class="js-player" controls>
+                                    <source src="assets/videos/projetoPhp.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeo HTML5.
+                                </video>
+                                <div class="buttons-modal">
+                                    <a href="https://github.com/Kaylan00/painelPlataformaDeCursos-PHP.git"
+                                        target="_blank">Acessar repositório</a>
+                                </div>
+                            </div>
+                            <div class="content-modal-text">
+                                <div id="div-title-modal">
+                                    <h2>Painel plataforma de cursos</h2>
+                                    <span class="modal-close">&times;</span>
+                                </div>
+                                <p>Um projeto de plataforma de cursos feito com Bootstrap, HTML, PHP e banco de dados
+                                    MySQL. O painel oferece funcionalidades como gerenciamento de alunos (adicionar,
+                                    excluir e alterar nome), gerenciamento de cursos (adicionar, alterar nome e excluir)
+                                    e matrícula em cursos (matricular aluno em um curso e excluir matrícula de um aluno
+                                    em um curso), todos gerenciados no banco de dados MySQL
+                                    <br><br>
+
+                                    Esse projeto foi desenvolvido com as seguintes ferramentas: <br><br>
+
+                                    • PHP <br>
+                                    • HTML5 <br>
+                                    • CSS3 <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-technologies="html, css, bootstrap">
+                        <img src="assets/img/imagembootstrap.png" alt="Project 1">
+                        <h2>Interface de site de viagens</h2>
+                    </div>
+                    <div class="modal" id="modal-project-5">
+                        <div class="container-modal">
+                            <div class="content-modal-video">
+                                <video class="js-player" controls>
+                                    <source src="assets/videos/ProjetoBootstrap.mp4" type="video/mp4" >
+                                    Seu navegador não suporta vídeo HTML5.
+                                </video>
+                                <div class="buttons-modal">
+                                    <a href="https://kaylan00.github.io/Caravan-bootstrap/" target="_blank">Acessar
+                                        repositório</a>
+                                    <a href="https://kaylan00.github.io/Caravan-bootstrap/" target="_blank">Ver projeto
+                                        na web</a>
+                                </div>
+                            </div>
+                            <div class="content-modal-text">
+
+                                <h2>Site de viagens</h2>
+                                <span class="modal-close">&times;</span>
+                                <p>Projeto rede social feito com angular e adonnisJS, tendo uma api rest
+                                    desenvolvida por mim, no projeto há possibilidades de:
+                                    postar imagens, excluir, adicionar descrição, editar descrição ou imagem,
+                                    comentar nas publicações, editar comentarios e excluir comentarios!
+                                    <br><br>
+
+                                    Esse projeto foi desenvolvido com as seguintes ferramentas: <br><br>
+
+                                    • HTML5; <br>
+                                    • CSS3; <br>
+                                    • Vanilla JavaScript; <br>
+                                    • Bootstrap4 <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card" data-technologies="html, css, jquery, javascript">
+                        <img src="assets/img/imagemFormulario.png" alt="Project 6">
+                        <h2>Formulario Complexo</h2>
+                    </div>
+                    <div class="modal" id="modal-project-6">
+                        <div class="container-modal">
+                            <div class="content-modal-video">
+                                <video class="js-player" controls>
+                                    <source src="assets/videos/FormularioComplexoProjeto.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeo HTML5.
+                                </video>
+                                <div class="buttons-modal">
+                                    <a href="https://github.com/Kaylan00/formularioComplexo-jquery.git"
+                                        target="_blank">Acessar repositório</a>
+                                    <a href="https://kaylan00.github.io/formularioComplexo-jquery/" target="_blank">Ver
+                                        projeto na web</a>
+                                </div>
+                            </div>
+                            <div class="content-modal-text">
+                                <div id="div-title-modal">
+                                    <h2>Formulario Complexo</h2>
+                                    <span class="modal-close">&times;</span>
+                                </div>
+                                <p>Formulário com validações realizadas através do jQuery e integração com uma API para
+                                    preenchimento automático do endereço! Neste formulário, o usuário pode anexar
+                                    arquivos, visualizar os arquivos anexados, adicionar produtos, sendo obrigatório ter
+                                    pelo menos 1 produto e um anexo. Após o envio do formulário, uma tela simples de
+                                    carregamento é exibida, e um arquivo no formato JSON, contendo as informações do
+                                    formulário, incluindo anexos e produtos, é baixado automaticamente.
+
+                                    <br><br>
+
+                                    Esse projeto foi desenvolvido com as seguintes ferramentas: <br><br>
+
+                                    • HTML5; <br>
+                                    • CSS3; <br>
+                                    • Vanilla JavaScript; <br>
+                                    • Jquery <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h1>Contato</h1>
+                <div class="contact-links">
+                    <div class="icon">
+                        <a href="mailto:kaylanargollo16@gmail.com" target="_blank">
+                            <div class="box-contact">
+                                <i class='bx bx-envelope'></i>
+                            </div>
+                        </a>
+                        <a href="mailto:kaylanargollo16@gmail.com" target="_blank">
+                            <strong>E-mail</strong>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="tel:+5528999087714" target="_blank">
+                            <div class="box-contact">
+                                <i class='bx bx-phone'></i>
+                            </div>
+                        </a>
+                        <a href="tel:+5528999087714" target="_blank">
+                            <strong>Telefone</strong>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/kaylansouza/" target="_blank">
+                            <div class="box-contact">
+                                <i class='bx bxl-linkedin'></i>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kaylansouza/" target="_blank">
+                            <strong>LinkedIn</strong>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://github.com/Kaylan00" target="_blank">
+                            <div class="box-contact">
+                                <i class='bx bxl-github'></i>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Kaylan00" target="_blank">
+                            <strong>Github</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Kaylan Souza - Portfolio</p>
+        </div>
+    </footer>
+    <script src="./scripts/script.js" defer></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
