@@ -1,0 +1,65 @@
+
+.light-theme {
+    background-color: #fff0da;
+    color: #333;
+}
+.light-theme header {
+    background: linear-gradient(to right, #ffe0b5, #ffc26c);
+    border: none;
+}
+.light-theme .nav-links a {
+    color: #1a1a1a; 
+}
+
+
+.light-theme .about-topic h2{
+    color: #a46b14;
+    border-right:solid 3px #a46b14;
+}
+.light-theme .about-topic span{
+    color: #a46b14;
+}
+.light-theme .actions a{
+    color: #333;
+}
+.light-theme .box i {
+    color: #a46b14;
+}
+
+.light-theme .filter-menu label{
+    color: #1a1a1a;
+}
+.light-theme .project-card {
+    background-color: #ffb444; 
+    color: white; 
+}
+.light-theme .container-modal {
+    background-color: #ffc26c;
+    color: white; 
+    border:solid 3px #1a1a1a;
+}
+.light-theme .container-modal p {
+    color: #1a1a1a;
+}
+.light-theme .buttons-modal a{
+    color: #1a1a1a;
+    border: solid 2px #1a1a1a;
+}
+.light-theme .modal-close {
+    color: #1a1a1a;
+}
+.light-theme footer {
+    background: linear-gradient(to right, #ffe0b5, #ffc26c);
+}
+.light-theme footer p {
+    color: #333; 
+}
+.light-theme .project-card P{
+    color: #fff;
+}
+.light-theme .contact-links a{
+    color: #1a1a1a;
+}
+.light-theme .social-links a{
+    color: #1a1a1a;
+}

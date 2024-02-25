@@ -1,0 +1,34 @@
+.about-card {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    border: 2px solid #ff8a00;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: transparent;
+}
+#education{
+    margin-top: 3px;
+}
+.about-topic h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    border-right: solid var(--primary-color) 3px;
+    border-left: #ff8a00 solid 3px;
+    border-radius: 5px;
+}
+
+
+.about-topic ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-topic ul li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+.highlighted-text{
+    color: var(--primary-color);
+}

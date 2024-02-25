@@ -9,7 +9,7 @@
 
 @media (min-width: 1024px) {
     .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         
     }
 }
@@ -17,7 +17,7 @@
     .container-modal{
         flex-direction: column;
         text-align: center;
-        margin-top: 350px;
+        margin-top: 300px;
         height: auto;
     }
     .modal h2{
@@ -78,8 +78,8 @@
     }
     .modal-close {
         position: absolute;
-        top: 120px;
-        right: 30px;
+        top: 50px;
+        right: px;
         cursor: pointer;
         font-size: 50px;
         color: #fff;
@@ -90,6 +90,9 @@
         z-index: 10000;
         color: #ff8a00;
         font-size: 2rem;
+    }
+    .buttons-modal a{
+        width: 100%;
     }
     .buttons-modal{
         display: flex;
@@ -102,7 +105,12 @@
     }
 
     .project-card {
-        width: 300px;
+        width: 100%;
+        height: auto;
+    }
+    .project-card img{
+        width: 100%;
+        height: auto; 
     }
     .title{
         text-align: center;
@@ -125,8 +133,22 @@
         flex-direction: column-reverse;
         align-items: center;
         gap: 4rem;
-        margin-top: 30px;
+        margin-top: 10vh;
     }
+    .container-modal {
+        min-height: 70%;
+        height: auto; 
+        margin-top: 5vh; 
+        margin-bottom: auto; 
+    }
+    .project-card {
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 600px) {
+
+
     .project-card {
         width: 100%;
         justify-content: center;

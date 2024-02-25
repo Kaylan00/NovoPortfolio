@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaylan Souza Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/mediaquery.css">
 </head>
 
@@ -29,7 +29,7 @@
     </header>
 
     <main>
-        <section id="sobre" class="js-section">
+        <section id="profile" class="js-section">
             <div class="container-profile ">
                 <div class="banner">
                     <div class="intro">
@@ -50,16 +50,32 @@
                 </div>
             </div>
         </section>
-
         <section id="about" class="section">
             <div class="container">
                 <h1>Sobre Mim</h1>
-                <p id="paragraph-about">Olá! Eu sou Kaylan Souza. Comecei minha jornada estudando HTML, CSS e
-                    JavaScript, e aos poucos fui explorando outras tecnologias de acordo com as demandas do mercado e
-                    com as quais me identificava. Tenho experiência em atendimento ao cliente, otimização de processos
-                    de trabalho e adaptação a diferentes tecnologias.</p>
+                <div class="about-card">
+                    <div class="about-topic">
+                        <h2 id="education"><i class='bx bxs-school'></i> Escolaridade</h2>
+                        <ul>
+                            <li>Cursando superior em <span>Análise e Desenvolvimento de Sistemas</span>.</li>
+                            <li>Concluí o ensino médio <span>integrado ao técnico em Recursos Humanos  </span>em 2022</li>
+
+                        </ul>
+                    </div>
+                    <div class="about-topic">
+                        <h2><i class='bx bx-home-circle'></i>Competências</h2>
+                        <ul>
+                            <li>Tenho facilidade em aprender novas tecnologias e conceitos.</li>
+                            <li>Amo programação e desenvolvimento de software.</li>
+                            <li><span>Sou comunicativo, empático e amigável</span>, facilitando a colaboração em equipe.</li>
+                            <li><span>Flexível e adaptável</span> a diferentes ambientes de trabalho.</li>
+                            <li><span>Sou autodidata</span>, buscando constantemente aprender e aprimorar minhas habilidades.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
+
         <section id="skills" class="section">
             <h1>Habilidades</h1>
             <div class="cards">
@@ -522,8 +538,8 @@
                                     Seu navegador não suporta vídeo HTML5.
                                 </video>
                                 <div class="buttons-modal">
-                                    <a href="https://github.com/Kaylan00/Desafio-DriveOn"
-                                        target="_blank">Acessar repositório</a>
+                                    <a href="https://github.com/Kaylan00/Desafio-DriveOn" target="_blank">Acessar
+                                        repositório</a>
                                     <a href="https://kaylan00.github.io/Desafio-DriveOn/" target="_blank">Ver
                                         Projeto na web</a>
                                 </div>
@@ -553,57 +569,60 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card" data-technologies="react">
-                    <img src="assets/img/ProjetoCriptomoedas.png" alt="Project 10">
-                    <h2>Informações Criptomoedas</h2>
-                </div>
-                <div class="modal" id="modal-project-10">
-                    <div class="container-modal">
-                        <div class="content-modal-video">
-                            <video class="js-player" controls>
-                                <source src="assets/videos/ProjetoCriptomoedas.mp4" type="video/mp4">
-                                Seu navegador não suporta vídeo HTML5.
-                            </video>
-                            <div class="buttons-modal">
-                                <a href="https://github.com/Kaylan00/Desafio-t-cnico-react"
-                                    target="_blank">Acessar repositório</a>
+                    <div class="project-card" data-technologies="react">
+                        <img src="assets/img/ProjetoCriptomoedas.png" alt="Project 10">
+                        <h2>Informações Criptomoedas</h2>
+                    </div>
+                    <div class="modal" id="modal-project-10">
+                        <div class="container-modal">
+                            <div class="content-modal-video">
+                                <video class="js-player" controls>
+                                    <source src="assets/videos/ProjetoCriptomoedas.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeo HTML5.
+                                </video>
+                                <div class="buttons-modal">
+                                    <a href="https://github.com/Kaylan00/Desafio-t-cnico-react" target="_blank">Acessar
+                                        repositório</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="content-modal-text">
-                            <div id="div-title-modal">
-                                <h2>Informações Criptomoedas</h2>
-                                <span class="modal-close">&times;</span>
+                            <div class="content-modal-text">
+                                <div id="div-title-modal">
+                                    <h2>Informações Criptomoedas</h2>
+                                    <span class="modal-close">&times;</span>
+                                </div>
+                                <p>O Projeto Desafio React é uma aplicação web desenvolvida com React, uma biblioteca
+                                    JavaScript popular para construção de interfaces de usuário. Este projeto foi criado
+                                    como parte de um desafio técnico e tem como objetivo permitir que os usuários
+                                    adicionem
+                                    criptoativos e obtenham dados complementares da API pública CoinMarketCap.
+
+                                    Funcionalidades Principais:
+
+                                    Adição de Criptoativos: Os usuários podem adicionar criptoativos fornecendo seus
+                                    nomes.
+                                    Consulta à API CoinMarketCap: Os dados complementares dos criptoativos são
+                                    recuperados
+                                    através da API CoinMarketCap para exibição na aplicação.
+                                    Validação de Entradas: O projeto incorpora validação para garantir que os nomes dos
+                                    criptoativos sejam inseridos corretamente.
+                                    Estilização Atraente: A interface é estilizada utilizando a biblioteca Styled
+                                    Components, proporcionando uma experiência visual agradável.
+                                    Recursos Adicionais:
+
+                                    <br><br>
+
+                                    Esse projeto foi desenvolvido com as seguintes ferramentas: <br><br>
+                                    • HTML <br>
+                                    • CSS <br>
+                                    • Typescript<br>
+                                    • React<br>
+
+
+                                </p>
                             </div>
-                            <p>O Projeto Desafio React é uma aplicação web desenvolvida com React, uma biblioteca
-                                JavaScript popular para construção de interfaces de usuário. Este projeto foi criado
-                                como parte de um desafio técnico e tem como objetivo permitir que os usuários adicionem
-                                criptoativos e obtenham dados complementares da API pública CoinMarketCap.
-
-                                Funcionalidades Principais:
-
-                                Adição de Criptoativos: Os usuários podem adicionar criptoativos fornecendo seus nomes.
-                                Consulta à API CoinMarketCap: Os dados complementares dos criptoativos são recuperados
-                                através da API CoinMarketCap para exibição na aplicação.
-                                Validação de Entradas: O projeto incorpora validação para garantir que os nomes dos
-                                criptoativos sejam inseridos corretamente.
-                                Estilização Atraente: A interface é estilizada utilizando a biblioteca Styled
-                                Components, proporcionando uma experiência visual agradável.
-                                Recursos Adicionais:
-
-                                <br><br>
-
-                                Esse projeto foi desenvolvido com as seguintes ferramentas: <br><br>
-                                • HTML <br>
-                                • CSS <br>
-                                • Javascript <br>
-
-                            </p>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
 
@@ -653,6 +672,8 @@
                     </div>
                 </div>
             </div>
+
+
         </section>
     </main>
 
