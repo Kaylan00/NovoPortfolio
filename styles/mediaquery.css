@@ -135,6 +135,9 @@
         gap: 4rem;
         margin-top: 10vh;
     }
+    .about-card{
+        flex-direction: column;
+    }
     .container-modal {
         min-height: 70%;
         height: auto; 
