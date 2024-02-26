@@ -129,6 +129,9 @@
 }
 
 @media screen and (max-width: 691px) {
+    .profile:hover {
+        transform: scale(0.9);
+    }
     .banner{
         flex-direction: column-reverse;
         align-items: center;

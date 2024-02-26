@@ -15,7 +15,12 @@
 .light-theme .about-topic h2{
     color: #a46b14;
     border-right:solid 3px #a46b14;
+    border-left:solid 3px #a46b14;
 }
+.light-theme .about-card {
+    border: 2px solid #a46b14;
+}
+
 .light-theme .about-topic span{
     color: #a46b14;
 }

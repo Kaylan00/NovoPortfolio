@@ -35,9 +35,9 @@
 }
 .project-card img {
     width: 100%;
-    height: 230px; 
+    height: 250px;
     border-radius: 12px;
-    margin-bottom: 1rem; 
+    margin-bottom: 2rem; 
     transition: transform 0.3s ease;
 }
 .project-card:hover img {
