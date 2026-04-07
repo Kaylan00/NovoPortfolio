@@ -1,0 +1,18 @@
+{
+  "name": "kaylan-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio pessoal de Kaylan Argollo — Desenvolvedor Full Stack Júnior",
+  "scripts": {
+    "sass": "sass --watch styles/main.scss:styles/main.css",
+    "build": "sass styles/main.scss:styles/main.css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaylan00/NovoPortfolio.git"
+  },
+  "author": "Kaylan Argollo",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.98.0"
+  }
+}
