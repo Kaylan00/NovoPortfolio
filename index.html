@@ -1,643 +1,441 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KAYLAN.DEV</title>
-  <meta name="description" content="Portfólio de Kaylan Argollo — Desenvolvedor Full Stack com foco em Front-end." />
-  <meta name="theme-color" content="#0a0a0a" />
-  <meta property="og:title" content="KAYLAN.DEV" />
-  <meta property="og:description" content="Portfólio de Kaylan Argollo — Desenvolvedor Full Stack com foco em Front-end." />
+  <title>Kaylan Argollo | Desenvolvedor Full Stack</title>
+  <meta name="description" content="Sou um Desenvolvedor Full Stack com experiência em React, TypeScript, Python e Django. Crio interfaces modernas e backends escaláveis." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Kaylan Argollo | Desenvolvedor Full Stack" />
+  <meta property="og:description" content="Desenvolvedor Full Stack com experiência em React, TypeScript, Python e Django." />
+  <meta name="theme-color" content="#09090b" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='900' fill='%234ade80'>K</text></svg>" />
 
   <link rel="stylesheet" href="styles/main.css" />
 </head>
-<body class="loading dark">
+<body>
 
-  <!-- Loading screen -->
-  <div class="loader" id="loader">
-    <div class="loader__content">
-      <div class="loader__logo">
-        <span class="loader__line">KAYLAN</span>
-        <span class="loader__line">.DEV</span>
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="container header__nav">
+      <a href="#" class="header__logo">Kaylan</a>
+
+      <div class="header__links">
+        <a href="#sobre" class="header__link">Sobre mim</a>
+        <a href="#projetos" class="header__link">Projetos</a>
+        <a href="#skills" class="header__link">Skills</a>
+        <a href="#experiencia" class="header__link">Experiência</a>
+        <a href="#contato" class="header__link">Contato</a>
+
+        <div class="header__social">
+          <a href="https://github.com/Kaylan00" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/kaylansouza/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
       </div>
-      <div class="loader__bar">
-        <div class="loader__fill"></div>
-      </div>
-    </div>
-  </div>
+
+      <button class="header__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#sobre" class="mobile-menu__link">Sobre mim</a>
+    <a href="#projetos" class="mobile-menu__link">Projetos</a>
+    <a href="#experiencia" class="mobile-menu__link">Experiência</a>
+    <a href="#skills" class="mobile-menu__link">Skills</a>
+    <a href="#contato" class="mobile-menu__link">Contato</a>
+  </nav>
+
 
   <!-- Noise grain overlay -->
   <div class="noise-overlay" aria-hidden="true"></div>
 
-  <!-- Animated dot grid background -->
-  <canvas class="dot-grid" id="dotGrid" aria-hidden="true"></canvas>
+  <!-- Background blurs -->
+  <div class="bg-blurs" aria-hidden="true">
+    <div class="bg-blurs__blob bg-blurs__blob--1"></div>
+    <div class="bg-blurs__blob bg-blurs__blob--2"></div>
+    <div class="bg-blurs__blob bg-blurs__blob--3"></div>
+    <div class="bg-blurs__blob bg-blurs__blob--4"></div>
+  </div>
 
-  <!-- Custom cursor -->
-  <div class="cursor-glow" id="cursorGlow"></div>
-
-  <!-- Header -->
-  <header class="header" id="header">
-    <div class="header__bar">
-      <nav class="header__inner">
-        <a href="#inicio" class="header__brand" aria-label="Home">
-          <span class="wordmark">KAYLAN.DEV</span>
-        </a>
-
-        <div class="tabs" id="navTabs">
-          <a href="#sobre-mim" class="tab magnetic">Sobre</a>
-          <a href="#experiencia" class="tab magnetic">Experiência</a>
-          <a href="#stack" class="tab magnetic">Stack</a>
-          <a href="#projetos" class="tab magnetic">Projetos</a>
-          <a href="#contato" class="tab magnetic">Contato</a>
-        </div>
-
-        <div class="header__meta">
-          <button class="theme-switch magnetic" id="themeSwitch" role="switch" aria-checked="true" aria-label="Alternar tema">
-            <span class="theme-switch__track">
-              <span class="theme-switch__thumb"></span>
-            </span>
-            <span class="theme-switch__label">
-              <span class="theme-switch__sun">☀️</span>
-              <span class="theme-switch__moon">🌙</span>
-            </span>
-          </button>
-        </div>
-
-        <button class="header__hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </nav>
-    </div>
-    <div class="scroll-progress" id="scrollProgress"></div>
-  </header>
-
-  <!-- Mobile Menu -->
-  <nav class="mobile-menu" id="mobileMenu" aria-hidden="true" style="display:none">
-    <a href="#sobre-mim" class="mobile-menu__link">Sobre</a>
-    <a href="#experiencia" class="mobile-menu__link">Experiência</a>
-    <a href="#stack" class="mobile-menu__link">Stack</a>
-    <a href="#projetos" class="mobile-menu__link">Projetos</a>
-    <a href="#contato" class="mobile-menu__link">Contato</a>
-  </nav>
-
-  <div class="page">
+  <main>
 
     <!-- HERO -->
     <section class="hero" id="inicio">
-      <div class="hero__inner">
-        <div class="hero__badge">
-          <span class="status-dot"></span>
-          <span>Disponível para propostas</span>
-        </div>
-        <div class="hero__name-block">
-          <h1 class="hero__name">
-            <span class="hero__name-line hero__name-line--gradient">Kaylan</span>
-            <span class="hero__name-line hero__name-line--accent">Argollo<span class="hero__dot">.</span></span>
+      <div class="container hero__inner">
+        <div class="hero__top">
+          <h1 class="hero__name" id="heroName">
+            <span class="hero__name-text"></span><span class="hero__cursor">|</span>
           </h1>
         </div>
-        <div class="hero__meta">
-          <div class="hero__content">
-            <p class="kicker">
-              <span class="kicker__icon">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </span>
-              <span>Full Stack Developer, automações, front-end craft</span>
-            </p>
-            <p class="body-text text-secondary hero__desc">
-              2 anos de experiência profissional em <span class="text-highlight">React</span>, <span class="text-highlight">SCSS</span> e <span class="text-highlight">JavaScript</span> — entregando interfaces em squads de produto.
-            </p>
-            <div class="tag-row" style="display:none"><!-- hidden tag row for JS --></div>
-          </div>
-        </div>
-        <div class="hero__actions">
-          <a href="#projetos" class="btn btn--primary magnetic">
-            <span>Ver projetos</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" x2="19" y1="12" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <a href="https://github.com/Kaylan00" class="btn btn--ghost magnetic" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          <a href="https://www.linkedin.com/in/kaylansouza/" class="btn btn--outline-accent magnetic" target="_blank" rel="noopener noreferrer">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-            <span>LinkedIn</span>
-          </a>
-        </div>
 
-        <!-- Key metrics -->
-        <div class="hero__metrics">
-          <div class="metric">
-            <span class="metric__number" data-target="100">0</span><span class="metric__plus">+</span>
-            <span class="metric__label">Interfaces entregues</span>
-          </div>
-          <div class="metric">
-            <span class="metric__number" data-target="2">0</span><span class="metric__plus">+</span>
-            <span class="metric__label">Anos de experiência</span>
-          </div>
-          <div class="metric">
-            <span class="metric__number" data-target="3">0</span>
-            <span class="metric__label">Promoções na Seazone</span>
-          </div>
-        </div>
-        <div class="hero__scroll-hint" aria-hidden="true">
-          <span>scroll</span>
-          <div class="hero__scroll-line"></div>
-        </div>
-      </div>
+        <div class="hero__bottom">
+          <p class="hero__description">
+            Sou um desenvolvedor que gosta de criar aplicações reais, complexas e desafiadoras. De interfaces modernas e intuitivas até backends seguros e escaláveis.
+          </p>
 
-      <!-- Bento grid -->
-      <div class="hero__bento">
-        <div class="hero__photo-card bento-card">
-          <div class="hero__photo-wrap">
-            <img class="hero__photo" src="assets/img/Imagem1-removebg-preview.webp" alt="Kaylan Argollo" loading="lazy" />
-          </div>
-          <p class="hero__photo-name">Kaylan Argollo</p>
-          <p class="hero__photo-role">Dev Full Stack</p>
-          <div class="hero__status">
-            <span class="status-dot"></span>
-            <span class="status-text">Disponível para propostas</span>
-          </div>
-        </div>
-
-        <div class="bento-card bento-card--code">
-          <div class="code-snippet" aria-hidden="true">
-            <div class="code-snippet__header">
-              <span class="code-snippet__dot code-snippet__dot--red"></span>
-              <span class="code-snippet__dot code-snippet__dot--yellow"></span>
-              <span class="code-snippet__dot code-snippet__dot--green"></span>
-              <span class="code-snippet__filename">kaylan.ts</span>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <div class="hero__stat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <span class="hero__stat-label">Interfaces</span>
+              <span class="hero__stat-value"><span data-target="100">0</span>+</span>
             </div>
-            <pre class="code-snippet__body"><code><span class="code-kw">const</span> <span class="code-var">dev</span> = {
-  <span class="code-prop">nome</span>: <span class="code-str">"Kaylan Argollo"</span>,
-  <span class="code-prop">stack</span>: [<span class="code-str">"React"</span>, <span class="code-str">"Python"</span>, <span class="code-str">"TypeScript"</span>],
-  <span class="code-prop">disponivel</span>: <span class="code-bool">true</span>,
-};</code></pre>
-          </div>
-        </div>
-
-        <div class="stat-card bento-card">
-          <span class="stat-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          </span>
-          <div>
-            <p class="stat-card__label">Stack principal</p>
-            <p class="stat-card__title">React & Python</p>
-            <p class="stat-card__desc">TypeScript, Next.js, Django, PostgreSQL e APIs REST.</p>
-          </div>
-        </div>
-
-        <div class="stat-card bento-card">
-          <span class="stat-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          </span>
-          <div>
-            <p class="stat-card__label">Automações</p>
-            <p class="stat-card__title">n8n & Make</p>
-            <p class="stat-card__desc">Integrações, webhooks e fluxos automatizados.</p>
-          </div>
-        </div>
-
-        <div class="stat-card bento-card">
-          <span class="stat-card__icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" x2="12.01" y1="17" y2="17"/></svg>
-          </span>
-          <div>
-            <p class="stat-card__label">Mentalidade</p>
-            <p class="stat-card__title">Produto</p>
-            <p class="stat-card__desc">Penso no produto como um todo, não só no código.</p>
+            <div class="hero__stat">
+              <div class="hero__stat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <span class="hero__stat-label">Anos exp.</span>
+              <span class="hero__stat-value" data-target="2">0</span>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C5.7 4 7 5.3 7 6.5V8"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C18.3 4 17 5.3 17 6.5V8"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </div>
+              <span class="hero__stat-label">Promoções</span>
+              <span class="hero__stat-value" data-target="3">0</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Tech marquee ticker -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span class="marquee__item">React.js</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">Next.js</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">TypeScript</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">Python</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">Django</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">SCSS</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">PostgreSQL</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">Docker</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">n8n</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">APIs REST</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">Git</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">React.js</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">Next.js</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">TypeScript</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">Python</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">Django</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">SCSS</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">PostgreSQL</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">Docker</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">n8n</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">APIs REST</span>
-        <span class="marquee__sep">/</span>
-        <span class="marquee__item">Git</span>
-        <span class="marquee__sep">/</span>
+    <!-- SOBRE MIM -->
+    <section class="about" id="sobre">
+      <div class="container about__grid about__grid--no-photo">
+        <div class="about__content">
+          <h2 class="about__title">Um pouco sobre mim e minha trajetória na programação</h2>
+          <p class="about__text">
+            Comecei minha jornada na Seazone como estagiário de Business Operations, onde automatizava processos internos com JavaScript, HTML/CSS e ferramentas como Google Apps Script e Make.
+          </p>
+          <p class="about__text">
+            A paixão por código me levou ao time de desenvolvimento, onde atuei em squads de produto construindo interfaces com React e TypeScript, integrando APIs e colaborando diretamente com designers e PMs.
+          </p>
+          <p class="about__text">
+            Hoje sou Desenvolvedor Full Stack Jr na Seazone, com mais de 100 interfaces entregues, participação em code reviews e monitoramento de produção com Sentry e PostHog. Meu objetivo é criar projetos que impactem de forma positiva a vida das pessoas.
+          </p>
+          <a href="#projetos" class="about__cta">
+            Veja meus projetos
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="7" x2="17" y2="17"/><polyline points="7 17 17 17 17 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="projects projects--grid" id="projetos">
+      <div class="container">
+        <h2 class="projects__title">Meus projetos</h2>
+
+        <div class="projects__grid">
+          <!-- Projeto 01 -->
+          <div class="projects__card">
+            <a href="https://maison-aurore.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__card-inner">
+              <div class="projects__card-top">
+                <span class="projects__card-num">01</span>
+              </div>
+              <div class="projects__card-img-wrap">
+                <img src="assets/img/teste.png" alt="Maison Aurore" class="projects__card-img" loading="lazy" />
+              </div>
+              <h3 class="projects__card-title">Maison Aurore — Luxury Boutique Hotel</h3>
+              <p class="projects__card-desc">Site de um hotel boutique de luxo fictício com animações GSAP, galeria com lightbox e booking flow completo.</p>
+              <div class="projects__card-tags">
+                <span>React</span>
+                <span>Vite</span>
+                <span>SCSS</span>
+                <span>GSAP</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Projeto 02 -->
+          <div class="projects__card">
+            <a href="https://mansao-prime.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__card-inner">
+              <div class="projects__card-top">
+                <span class="projects__card-num">02</span>
+              </div>
+              <div class="projects__card-img-wrap">
+                <img src="assets/img/Mansão prime.png" alt="Mansão Prime" class="projects__card-img" loading="lazy" />
+              </div>
+              <h3 class="projects__card-title">Mansão Prime — Imobiliária de Luxo</h3>
+              <p class="projects__card-desc">Site institucional de imobiliária de alto padrão com hero animado, busca fullscreen e portfólio de propriedades com filtros.</p>
+              <div class="projects__card-tags">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>SCSS</span>
+                <span>Tailwind</span>
+                <span>Framer Motion</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Projeto 03 -->
+          <div class="projects__card">
+            <a href="https://dashboard-controle-estoque-react-6m.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" class="projects__card-inner">
+              <div class="projects__card-top">
+                <span class="projects__card-num">03</span>
+              </div>
+              <div class="projects__card-img-wrap">
+                <img src="assets/img/dashboard-ux.webp" alt="Dashboard React" class="projects__card-img" loading="lazy" />
+              </div>
+              <h3 class="projects__card-title">UI/UX — Dashboard React</h3>
+              <p class="projects__card-desc">Dashboard moderno em React com foco em usabilidade, responsividade e acessibilidade.</p>
+              <div class="projects__card-tags">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>CSS</span>
+                <span>UI/UX</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Projeto 04 -->
+          <div class="projects__card">
+            <a href="https://kaylan00.github.io/TelaBrazilForest/" target="_blank" rel="noopener noreferrer" class="projects__card-inner">
+              <div class="projects__card-top">
+                <span class="projects__card-num">04</span>
+              </div>
+              <div class="projects__card-img-wrap">
+                <img src="assets/img/brazil.webp" alt="Brazil Forest" class="projects__card-img" loading="lazy" />
+              </div>
+              <h3 class="projects__card-title">Brazil Forest</h3>
+              <p class="projects__card-desc">Site vitrine sobre as florestas brasileiras com layout imersivo e storytelling visual.</p>
+              <div class="projects__card-tags">
+                <span>HTML</span>
+                <span>SASS</span>
+                <span>JavaScript</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Projeto 05 -->
+          <div class="projects__card">
+            <a href="https://kaylan00.github.io/Caravan-bootstrap/" target="_blank" rel="noopener noreferrer" class="projects__card-inner">
+              <div class="projects__card-top">
+                <span class="projects__card-num">05</span>
+              </div>
+              <div class="projects__card-img-wrap">
+                <img src="assets/img/caravan.webp" alt="Caravan" class="projects__card-img" loading="lazy" />
+              </div>
+              <h3 class="projects__card-title">Caravan</h3>
+              <p class="projects__card-desc">Site responsivo construído com Bootstrap, HTML e CSS. Layout limpo e navegação intuitiva.</p>
+              <div class="projects__card-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Projeto 06 -->
+          <div class="projects__card">
+            <a href="https://github.com/Kaylan00/painelPlataformaDeCursos-PHP" target="_blank" rel="noopener noreferrer" class="projects__card-inner">
+              <div class="projects__card-top">
+                <span class="projects__card-num">06</span>
+              </div>
+              <div class="projects__card-img-wrap projects__card-img-wrap--php">
+                <span class="projects__card-php">php</span>
+              </div>
+              <h3 class="projects__card-title">Plataforma de Cursos — PHP</h3>
+              <p class="projects__card-desc">Plataforma de cursos online com PHP, MySQL, autenticação e painel administrativo completo.</p>
+              <div class="projects__card-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VER TODOS -->
+    <div class="projects-cta">
+      <div class="container" style="text-align:center;">
+        <a href="https://github.com/Kaylan00" target="_blank" rel="noopener noreferrer" class="projects-cta__btn">
+          Ver todos os projetos no GitHub
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
       </div>
     </div>
 
-    <main class="main">
-
-      <!-- EXPERIÊNCIA -->
-      <section class="section" id="experiencia">
-        <div class="section-header">
-          <div class="section-label">
-            <span class="section-label__num">01</span>
-            <span class="section-label__text">EXPERIÊNCIA</span>
-          </div>
-          <h2 class="section-title scramble-text">Onde atuei</h2>
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="skills__heading">Hard Skills</h2>
+        <div class="skills__group">
+          <h3 class="skills__label">Front-end</h3>
+          <ul class="skills__list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>TypeScript</li>
+            <li>SCSS</li>
+            <li>Tailwind</li>
+            <li>Storybook</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__label">Back-end</h3>
+          <ul class="skills__list">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3 class="skills__label">Ferramentas</h3>
+          <ul class="skills__list">
+            <li>Slack</li>
+            <li>Docker</li>
+            <li>Git</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Sentry</li>
+            <li>PostHog</li>
+            <li>n8n</li>
+            <li>AWS</li>
+          </ul>
         </div>
 
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__header">
-              <div>
-                <h3 class="timeline__title">Desenvolvedor Full Stack Jr</h3>
-                <p class="timeline__company">Seazone · Set 2025 — Presente</p>
-              </div>
-              <span class="timeline__badge">Atual</span>
-            </div>
-            <p class="timeline__desc">Desenvolvimento, teste e manutenção de sistemas web com React.js, Next.js, TypeScript, Python (Django) e PostgreSQL. Criação de interfaces responsivas, integração com APIs REST, revisão de código e evolução de Design Systems com Storybook.</p>
-            <div class="timeline__tasks">
-              <span class="timeline__task">React.js / Next.js / TypeScript</span>
-              <span class="timeline__task">Python / Django / PostgreSQL</span>
-              <span class="timeline__task">Docker / CI/CD / AWS</span>
-              <span class="timeline__task">Sentry / PostHog</span>
-              <span class="timeline__task">n8n / Retool / APIs</span>
-              <span class="timeline__task">Code review / Storybook</span>
-            </div>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__header">
-              <div>
-                <h3 class="timeline__title">Estagiário Desenvolvedor Full Stack</h3>
-                <p class="timeline__company">Seazone · Set 2024 — Set 2025</p>
-              </div>
-              <span class="timeline__period">1 ano</span>
-            </div>
-            <p class="timeline__desc">Conversão de protótipos Figma em componentes React reutilizáveis, implementação de layouts responsivos, consumo de APIs REST e apoio à manutenção de back-end com Django e PostgreSQL.</p>
-            <div class="timeline__tasks">
-              <span class="timeline__task">React.js / TypeScript / Tailwind</span>
-              <span class="timeline__task">Figma para código</span>
-              <span class="timeline__task">APIs REST</span>
-              <span class="timeline__task">Python / Django</span>
-              <span class="timeline__task">Scrum / Kanban</span>
-            </div>
-          </div>
-
-          <div class="timeline__item">
-            <div class="timeline__dot"></div>
-            <div class="timeline__header">
-              <div>
-                <h3 class="timeline__title">Estagiário Business Operations</h3>
-                <p class="timeline__company">Seazone · Abr 2024 — Set 2024</p>
-              </div>
-              <span class="timeline__period">6 meses</span>
-            </div>
-            <p class="timeline__desc">Suporte técnico, automações com Google Apps Script e Make, integrações entre Pipedrive, Pipefy e Trello, consultas SQL e documentação de processos.</p>
-            <div class="timeline__tasks">
-              <span class="timeline__task">Google Apps Script</span>
-              <span class="timeline__task">Make / Automações</span>
-              <span class="timeline__task">SQL / APIs</span>
-              <span class="timeline__task">Suporte técnico</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- STACK / TECNOLOGIAS -->
-      <section class="section" id="stack">
-        <div class="section-header">
-          <div class="section-label">
-            <span class="section-label__num">02</span>
-            <span class="section-label__text">STACK</span>
-          </div>
-          <h2 class="section-title scramble-text">Ferramentas que domino</h2>
-        </div>
-
-        <div class="stack-track">
-          <div class="stack-card tilt-card magnetic">
-            <div class="stack-card__icon-wrap stack-card__icon-wrap--react">
-              <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="30" height="30" />
-            </div>
-            <h3 class="stack-card__name">React.js</h3>
-            <p class="stack-card__category">Front-end</p>
-          </div>
-          <div class="stack-card tilt-card magnetic">
-            <div class="stack-card__icon-wrap stack-card__icon-wrap--next">
-              <img src="https://cdn.simpleicons.org/nextdotjs/ffffff" alt="Next.js" width="30" height="30" />
-            </div>
-            <h3 class="stack-card__name">Next.js</h3>
-            <p class="stack-card__category">Front-end</p>
-          </div>
-          <div class="stack-card tilt-card magnetic">
-            <div class="stack-card__icon-wrap stack-card__icon-wrap--ts">
-              <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScript" width="30" height="30" />
-            </div>
-            <h3 class="stack-card__name">TypeScript</h3>
-            <p class="stack-card__category">Linguagem</p>
-          </div>
-          <div class="stack-card tilt-card magnetic">
-            <div class="stack-card__icon-wrap stack-card__icon-wrap--python">
-              <img src="https://cdn.simpleicons.org/python/FFD43B" alt="Python" width="30" height="30" />
-            </div>
-            <h3 class="stack-card__name">Python</h3>
-            <p class="stack-card__category">Back-end</p>
-          </div>
-          <div class="stack-card tilt-card magnetic">
-            <div class="stack-card__icon-wrap stack-card__icon-wrap--django">
-              <img src="https://cdn.simpleicons.org/django/44B78B" alt="Django" width="30" height="30" />
-            </div>
-            <h3 class="stack-card__name">Django</h3>
-            <p class="stack-card__category">Back-end</p>
-          </div>
-          <div class="stack-card tilt-card magnetic">
-            <div class="stack-card__icon-wrap stack-card__icon-wrap--java">
-              <img src="https://cdn.simpleicons.org/spring/6DB33F" alt="Spring" width="30" height="30" />
-            </div>
-            <h3 class="stack-card__name">Java / Spring</h3>
-            <p class="stack-card__category">Back-end</p>
-          </div>
-          <div class="stack-card tilt-card magnetic">
-            <div class="stack-card__icon-wrap stack-card__icon-wrap--docker">
-              <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" width="30" height="30" />
-            </div>
-            <h3 class="stack-card__name">Docker</h3>
-            <p class="stack-card__category">DevOps</p>
-          </div>
-          <div class="stack-card tilt-card magnetic">
-            <div class="stack-card__icon-wrap stack-card__icon-wrap--git">
-              <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" width="30" height="30" />
-            </div>
-            <h3 class="stack-card__name">Git</h3>
-            <p class="stack-card__category">Versionamento</p>
-          </div>
-          <div class="stack-card tilt-card magnetic">
-            <div class="stack-card__icon-wrap stack-card__icon-wrap--sentry">
-              <img src="https://cdn.simpleicons.org/sentry/362D59" alt="Sentry" width="30" height="30" />
-            </div>
-            <h3 class="stack-card__name">Sentry</h3>
-            <p class="stack-card__category">Observabilidade</p>
-          </div>
-          <div class="stack-card tilt-card magnetic">
-            <div class="stack-card__icon-wrap stack-card__icon-wrap--posthog">
-              <img src="https://cdn.simpleicons.org/posthog/1D4AFF" alt="PostHog" width="30" height="30" />
-            </div>
-            <h3 class="stack-card__name">PostHog</h3>
-            <p class="stack-card__category">Observabilidade</p>
-          </div>
-          <div class="stack-card tilt-card magnetic">
-            <div class="stack-card__icon-wrap stack-card__icon-wrap--storybook">
-              <img src="https://cdn.simpleicons.org/storybook/FF4785" alt="Storybook" width="30" height="30" />
-            </div>
-            <h3 class="stack-card__name">Storybook</h3>
-            <p class="stack-card__category">Front-end</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROJETOS -->
-      <section class="section" id="projetos">
-        <div class="section-header section-header--row">
-          <div>
-            <div class="section-label">
-              <span class="section-label__num">03</span>
-              <span class="section-label__text">PROJETOS</span>
-            </div>
-            <h2 class="section-title scramble-text">O que construí</h2>
-          </div>
-          <a class="btn btn--ghost btn--sm magnetic" href="https://github.com/Kaylan00" target="_blank" rel="noopener noreferrer">Ver todos ↗</a>
-        </div>
-
-        <div class="project-grid">
-          <div class="project-card project-card--featured">
-            <a href="https://kaylan00.github.io/TelaBrazilForest/" target="_blank" rel="noopener noreferrer" class="project-card__media project-card__media--img">
-              <img src="assets/img/brazil.webp" alt="Brazil Forest" class="project-card__img" loading="lazy" />
-              <div class="project-card__overlay">
-                <span class="project-card__overlay-cta">Ver projeto →</span>
-              </div>
-            </a>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Brazil Forest</h3>
-              <p class="project-card__desc">Site vitrine sobre as florestas brasileiras. Layout imersivo com foco em imagens e storytelling visual.</p>
-              <div class="project-card__tags">
-                <span class="mini-tag">HTML</span>
-                <span class="mini-tag">SASS</span>
-                <span class="mini-tag">JavaScript</span>
-              </div>
-              <a class="hyperlink magnetic" href="https://kaylan00.github.io/TelaBrazilForest/" target="_blank" rel="noopener noreferrer">
-                <span>Ver projeto</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" x2="17" y1="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <a href="https://github.com/Kaylan00/painelPlataformaDeCursos-PHP" target="_blank" rel="noopener noreferrer" class="project-card__media project-card__media--php">
-              <span class="project-card__php-logo">php</span>
-              <div class="project-card__overlay">
-                <span class="project-card__overlay-cta">Ver projeto →</span>
-              </div>
-            </a>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Plataforma de Cursos — PHP</h3>
-              <p class="project-card__desc">Plataforma de cursos online com PHP, MySQL, autenticação e painel administrativo completo.</p>
-              <div class="project-card__tags">
-                <span class="mini-tag">PHP</span>
-                <span class="mini-tag">MySQL</span>
-                <span class="mini-tag">HTML/CSS</span>
-                <span class="mini-tag">JavaScript</span>
-              </div>
-              <a class="hyperlink magnetic" href="https://github.com/Kaylan00/painelPlataformaDeCursos-PHP" target="_blank" rel="noopener noreferrer">
-                <span>Ver projeto</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" x2="17" y1="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <a href="https://dashboard-controle-estoque-react-6m.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" class="project-card__media project-card__media--img">
-              <img src="assets/img/dashboard-ux.webp" alt="Dashboard React" class="project-card__img" loading="lazy" />
-              <div class="project-card__overlay">
-                <span class="project-card__overlay-cta">Ver projeto →</span>
-              </div>
-            </a>
-            <div class="project-card__body">
-              <h3 class="project-card__title">UI/UX — Dashboard React</h3>
-              <p class="project-card__desc">Dashboard moderno em React com foco em usabilidade, responsividade e acessibilidade.</p>
-              <div class="project-card__tags">
-                <span class="mini-tag">React</span>
-                <span class="mini-tag">TypeScript</span>
-                <span class="mini-tag">CSS</span>
-                <span class="mini-tag">UI/UX</span>
-              </div>
-              <a class="hyperlink magnetic" href="https://dashboard-controle-estoque-react-6m.vercel.app/dashboard" target="_blank" rel="noopener noreferrer">
-                <span>Ver projeto</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" x2="17" y1="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <a href="https://kaylan00.github.io/Caravan-bootstrap/" target="_blank" rel="noopener noreferrer" class="project-card__media project-card__media--img">
-              <img src="assets/img/caravan.webp" alt="Caravan" class="project-card__img" loading="lazy" />
-              <div class="project-card__overlay">
-                <span class="project-card__overlay-cta">Ver projeto →</span>
-              </div>
-            </a>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Caravan</h3>
-              <p class="project-card__desc">Site responsivo construído com Bootstrap, HTML e CSS. Layout limpo e navegação intuitiva.</p>
-              <div class="project-card__tags">
-                <span class="mini-tag">HTML</span>
-                <span class="mini-tag">CSS</span>
-                <span class="mini-tag">Bootstrap</span>
-              </div>
-              <a class="hyperlink magnetic" href="https://kaylan00.github.io/Caravan-bootstrap/" target="_blank" rel="noopener noreferrer">
-                <span>Ver projeto</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" x2="17" y1="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-card__media project-card__media--img">
-              <img src="assets/img/port.webp" alt="Portfólio SCSS" class="project-card__img" loading="lazy" />
-              <div class="project-card__overlay">
-                <span class="project-card__overlay-cta">Você está aqui ✦</span>
-              </div>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Este Portfólio — SCSS puro</h3>
-              <p class="project-card__desc">Construído com SCSS, animações CSS, design system próprio com variáveis e arquitetura BEM.</p>
-              <div class="project-card__tags">
-                <span class="mini-tag">SCSS</span>
-                <span class="mini-tag">HTML5</span>
-                <span class="mini-tag">JavaScript</span>
-                <span class="mini-tag">BEM</span>
-              </div>
-              <a class="hyperlink magnetic" href="https://github.com/Kaylan00" target="_blank" rel="noopener noreferrer">
-                <span>Ver código</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" x2="17" y1="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SOBRE -->
-      <section class="section" id="sobre-mim">
-        <div class="section-header">
-          <div class="section-label">
-            <span class="section-label__num">04</span>
-            <span class="section-label__text">SOBRE</span>
-          </div>
-          <h2 class="section-title scramble-text">Quem sou eu</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-skills">
-            <h3 class="about-skills__title">Soft Skills</h3>
-            <div class="about-skills__list">
-              <span class="about-skill-tag">Boa comunicação</span>
-              <span class="about-skill-tag">Trabalho em equipe</span>
-              <span class="about-skill-tag">Honestidade</span>
-              <span class="about-skill-tag">Transparência</span>
-              <span class="about-skill-tag">Excelência em entregas</span>
-              <span class="about-skill-tag">Organizado</span>
-              <span class="about-skill-tag">Raciocínio lógico</span>
-              <span class="about-skill-tag">Proativo</span>
-              <span class="about-skill-tag">Determinado</span>
-            </div>
-          </div>
-
-          <div class="about-story">
-            <h3 class="about-story__title">Minha trajetória</h3>
-            <p class="about-story__text">
-              Comecei como estagiário de Business Operations, criando automações com JavaScript, HTML e CSS. Percebi que queria ir mais longe no desenvolvimento e me candidatei internamente para o time de engenharia — fui aceito e migrei de área.
-            </p>
-            <p class="about-story__text">
-              Como estagiário de desenvolvimento, trabalhei em squad de produto atuando diretamente com designers e time de back-end: construí interfaces responsivas, consumi diversas APIs REST e participei de alinhamentos de produto para garantir entregas com qualidade.
-            </p>
-            <p class="about-story__text">
-              Fui efetivado como Desenvolvedor Jr, onde minhas responsabilidades cresceram. Construí mais de 100 interfaces responsivas com boas práticas, realizei testes e monitoramento de bugs com Sentry, homologações em ambiente de produção e revisões de código.
-            </p>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer" id="contato">
-      <div class="footer__inner">
-        <div class="footer__heading-wrap">
-          <p class="section-label">
-            <span class="section-label__num">05</span>
-            <span class="section-label__text">CONTATO</span>
-          </p>
-          <h2 class="footer__heading">Vamos conversar?</h2>
-          <p class="footer__sub">Disponível para oportunidades, freelance e colaborações.</p>
-        </div>
-        <div class="footer__links">
-          <a class="footer__link magnetic" href="https://github.com/Kaylan00" target="_blank" rel="noopener noreferrer">
-            <span class="footer__link-label">GitHub</span>
-            <span class="footer__link-arrow">↗</span>
-          </a>
-          <a class="footer__link magnetic" href="https://www.linkedin.com/in/kaylansouza/" target="_blank" rel="noopener noreferrer">
-            <span class="footer__link-label">LinkedIn</span>
-            <span class="footer__link-arrow">↗</span>
-          </a>
-          <a class="footer__link magnetic" href="mailto:kaylanargollo16@gmail.com">
-            <span class="footer__link-label">E-mail</span>
-            <span class="footer__link-arrow">↗</span>
-          </a>
-        </div>
-        <p class="footer__credit">Designed & built by Kaylan Argollo · 2025</p>
+        <h2 class="skills__heading skills__heading--soft">Soft Skills</h2>
+        <ul class="skills__list skills__list--soft">
+          <li>Trabalho em equipe</li>
+          <li>Boa comunicação</li>
+          <li>Transparência e honestidade</li>
+          <li>Organização</li>
+          <li>Raciocínio lógico</li>
+          <li>Agilidade</li>
+          <li>Foco em resultado</li>
+          <li>Vontade de aprender e crescer</li>
+          <li>Colaboração com designers e back-end</li>
+          <li>Proatividade para sugerir melhorias</li>
+          <li>Adaptabilidade / gostar de desafios</li>
+        </ul>
       </div>
-    </footer>
-  </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="experience" id="experiencia">
+      <div class="container">
+        <h2 class="experience__heading">Minha experiência</h2>
+
+        <div class="experience__timeline">
+          <div class="experience__line"></div>
+          <div class="experience__dot"></div>
+
+          <div class="experience__item">
+            <div class="experience__left">
+              <div class="experience__role">
+                <h3>Desenvolvedor Front-end Junior / Full Stack</h3>
+                <p class="experience__company">Seazone</p>
+              </div>
+              <span class="experience__date">Set 2025 — Atualmente</span>
+            </div>
+            <div class="experience__right">
+              <p class="experience__desc">
+                Atuo no desenvolvimento full stack com React.js, Next.js, TypeScript no front-end e Python, Django, PostgreSQL no back-end. Responsável por code reviews, monitoramento com Sentry e PostHog, automações com n8n e deploy com Docker e AWS.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience__item">
+            <div class="experience__left">
+              <div class="experience__role">
+                <h3>Estagiário Desenvolvedor Full Stack</h3>
+                <p class="experience__company">Seazone</p>
+              </div>
+              <span class="experience__date">Set 2024 — Set 2025</span>
+            </div>
+            <div class="experience__right">
+              <p class="experience__desc">
+                Trabalhei em squad de produto construindo interfaces responsivas com React.js, TypeScript e Tailwind. Realizei integrações com APIs REST, colaborei com designers transformando Figma em código e participei de cerimônias Scrum/Kanban.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience__item">
+            <div class="experience__left">
+              <div class="experience__role">
+                <h3>Estagiário Business Operations</h3>
+                <p class="experience__company">Seazone</p>
+              </div>
+              <span class="experience__date">Abr 2024 — Set 2024</span>
+            </div>
+            <div class="experience__right">
+              <p class="experience__desc">
+                Automatizei processos internos com Google Apps Script, Make e integrações via APIs. Trabalhei com SQL para análise de dados e prestei suporte técnico à equipe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contato">
+    <div class="container footer__grid">
+
+      <div class="footer__contact">
+        <div class="footer__contact-item">
+          <div class="footer__contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <span class="footer__contact-label">Email</span>
+            <a href="mailto:kaylanargollo16@gmail.com">kaylanargollo16@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="footer__contact-item">
+          <div class="footer__contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <span class="footer__contact-label">Localização</span>
+            <span>Brasil</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__social">
+        <span class="footer__contact-label">Redes sociais</span>
+        <a href="https://github.com/Kaylan00" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+          GITHUB
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/kaylansouza/" target="_blank" rel="noopener noreferrer" class="footer__social-link">
+          LINKEDIN
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        </a>
+      </div>
+
+      <div class="footer__credit-col">
+        <span class="footer__credit-text">Criado e desenvolvido por <strong>Kaylan Argollo</strong></span>
+      </div>
+    </div>
+  </footer>
 
   <!-- WhatsApp floating button -->
   <a class="whatsapp-float" href="https://wa.me/5528999087714" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.3 0-.5 0-.1-.7-1.6-.9-2.2-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3 0-.2-.2-.3-.5-.4M12 21.5a9.3 9.3 0 0 1-4.8-1.3L2 22l1.8-5A9.4 9.4 0 0 1 2.5 12 9.5 9.5 0 1 1 12 21.5M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2"/></svg>
   </a>
-
-  <!-- Back to top -->
-  <button class="back-to-top magnetic" id="backToTop" aria-label="Voltar ao topo">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
 
   <script src="scripts/main.js"></script>
 </body>
