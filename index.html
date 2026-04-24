@@ -286,56 +286,24 @@
       </div>
     </section>
 
-    <!-- ─── PROJETOS (Carrossel) ─── -->
+    <!-- ─── PROJETOS ─── -->
     <section class="projects" id="projetos">
       <div class="container">
         <div class="projects__header">
-          <div>
-            <span class="section-tag">Projetos</span>
-            <h2 class="section-heading">Trabalhos em destaque</h2>
-          </div>
-          <div class="projects__controls">
-            <button class="projects__nav-btn" id="prevBtn" aria-label="Projeto anterior" disabled>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-            </button>
-            <span class="projects__counter" id="carouselCounter">01 / 07</span>
-            <button class="projects__nav-btn" id="nextBtn" aria-label="Próximo projeto">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </button>
-          </div>
+          <span class="section-tag">Projetos</span>
+          <h2 class="section-heading">Trabalhos em destaque</h2>
         </div>
 
-        <div class="projects__track-wrapper">
-          <div class="projects__track" id="carouselTrack">
+        <div class="projects__grid">
 
-            <!-- Card 01 -->
-            <div class="projects__card">
-              <div class="projects__img-wrap">
-                <img src="assets/img/flowlet.png" alt="Flowlet" loading="lazy" />
-              </div>
-              <div class="projects__card-body">
-                <div class="projects__card-top">
-                  <span class="projects__card-num">01</span>
-                  <a href="https://github.com/Kaylan00" target="_blank" rel="noopener noreferrer" class="projects__card-link" aria-label="Ver projeto">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-                  </a>
-                </div>
-                <h3 class="projects__card-title">Flowlet — Automação Visual</h3>
-                <p class="projects__card-desc">Plataforma no estilo n8n/Zapier com editor drag-and-drop, triggers via webhook e agendamento, execução em tempo real e vault de credenciais.</p>
-                <div class="projects__card-tags">
-                  <span>Angular</span><span>TypeScript</span><span>Fastify</span><span>PostgreSQL</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 02 -->
+            <!-- Card 01 — Maison Aurore -->
             <div class="projects__card">
               <div class="projects__img-wrap">
                 <img src="assets/img/maison aurore.png" alt="Maison Aurore" loading="lazy" />
               </div>
               <div class="projects__card-body">
                 <div class="projects__card-top">
-                  <span class="projects__card-num">02</span>
+                  <span class="projects__card-num">01</span>
                   <a href="https://maison-aurore.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__card-link" aria-label="Ver projeto">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                   </a>
@@ -348,14 +316,14 @@
               </div>
             </div>
 
-            <!-- Card 03 -->
+            <!-- Card 02 — Mansão Prime -->
             <div class="projects__card">
               <div class="projects__img-wrap">
                 <img src="assets/img/Mansão prime.png" alt="Mansão Prime" loading="lazy" />
               </div>
               <div class="projects__card-body">
                 <div class="projects__card-top">
-                  <span class="projects__card-num">03</span>
+                  <span class="projects__card-num">02</span>
                   <a href="https://mansao-prime.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__card-link" aria-label="Ver projeto">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                   </a>
@@ -368,87 +336,46 @@
               </div>
             </div>
 
-            <!-- Card 04 -->
+            <!-- Card 03 — Dashboard React -->
             <div class="projects__card">
               <div class="projects__img-wrap">
                 <img src="assets/img/dashboard-ux.webp" alt="Dashboard React" loading="lazy" />
               </div>
               <div class="projects__card-body">
                 <div class="projects__card-top">
-                  <span class="projects__card-num">04</span>
+                  <span class="projects__card-num">03</span>
                   <a href="https://dashboard-controle-estoque-react-6m.vercel.app/dashboard" target="_blank" rel="noopener noreferrer" class="projects__card-link" aria-label="Ver projeto">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                   </a>
                 </div>
                 <h3 class="projects__card-title">UI/UX — Dashboard React</h3>
-                <p class="projects__card-desc">Dashboard moderno com foco em usabilidade, responsividade e acessibilidade.</p>
+                <p class="projects__card-desc">Dashboard de controle de estoque com gráficos, filtros e responsividade total. Foco em usabilidade e acessibilidade.</p>
                 <div class="projects__card-tags">
                   <span>React</span><span>TypeScript</span><span>CSS</span><span>UI/UX</span>
                 </div>
               </div>
             </div>
 
-            <!-- Card 05 -->
+            <!-- Card 04 — Flowletter -->
             <div class="projects__card">
               <div class="projects__img-wrap">
-                <img src="assets/img/brazil.webp" alt="Brazil Forest" loading="lazy" />
+                <img src="assets/img/flowlet.png" alt="Flowletter" loading="lazy" />
               </div>
               <div class="projects__card-body">
                 <div class="projects__card-top">
-                  <span class="projects__card-num">05</span>
-                  <a href="https://kaylan00.github.io/TelaBrazilForest/" target="_blank" rel="noopener noreferrer" class="projects__card-link" aria-label="Ver projeto">
+                  <span class="projects__card-num">04</span>
+                  <a href="https://flowlet-beryl.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__card-link" aria-label="Ver projeto">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
                   </a>
                 </div>
-                <h3 class="projects__card-title">Brazil Forest</h3>
-                <p class="projects__card-desc">Site vitrine sobre as florestas brasileiras com layout imersivo e storytelling visual.</p>
+                <h3 class="projects__card-title">Flowletter — Automação Visual</h3>
+                <p class="projects__card-desc">Plataforma no estilo n8n/Zapier com editor drag-and-drop, triggers via webhook, agendamento e vault de credenciais.</p>
                 <div class="projects__card-tags">
-                  <span>HTML</span><span>SASS</span><span>JavaScript</span>
+                  <span>Angular</span><span>TypeScript</span><span>Fastify</span><span>PostgreSQL</span>
                 </div>
               </div>
             </div>
 
-            <!-- Card 06 -->
-            <div class="projects__card">
-              <div class="projects__img-wrap">
-                <img src="assets/img/caravan.webp" alt="Caravan" loading="lazy" />
-              </div>
-              <div class="projects__card-body">
-                <div class="projects__card-top">
-                  <span class="projects__card-num">06</span>
-                  <a href="https://kaylan00.github.io/Caravan-bootstrap/" target="_blank" rel="noopener noreferrer" class="projects__card-link" aria-label="Ver projeto">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-                  </a>
-                </div>
-                <h3 class="projects__card-title">Caravan</h3>
-                <p class="projects__card-desc">Site responsivo com Bootstrap, HTML e CSS. Layout limpo com navegação intuitiva.</p>
-                <div class="projects__card-tags">
-                  <span>HTML</span><span>CSS</span><span>Bootstrap</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 07 -->
-            <div class="projects__card">
-              <div class="projects__img-wrap projects__img-wrap--php">
-                <span class="projects__php-label">php</span>
-              </div>
-              <div class="projects__card-body">
-                <div class="projects__card-top">
-                  <span class="projects__card-num">07</span>
-                  <a href="https://github.com/Kaylan00/painelPlataformaDeCursos-PHP" target="_blank" rel="noopener noreferrer" class="projects__card-link" aria-label="Ver projeto">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-                  </a>
-                </div>
-                <h3 class="projects__card-title">Plataforma de Cursos — PHP</h3>
-                <p class="projects__card-desc">Plataforma com autenticação, painel administrativo completo e MySQL.</p>
-                <div class="projects__card-tags">
-                  <span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
         </div>
 
         <div class="projects__all">

@@ -922,72 +922,20 @@ button {
   border-bottom: 1px solid var(--border);
 
   &__header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
     margin-bottom: 2.5rem;
-    gap: 2rem;
-
-    @media (max-width: 600px) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .section-heading { margin-bottom: 0; }
   }
 
-  &__controls {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex-shrink: 0;
-  }
-
-  &__nav-btn {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    border: 1.5px solid var(--border-mid);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-    color: var(--text);
-
-    &:hover:not(:disabled) {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: white;
-    }
-
-    &:disabled {
-      opacity: 0.35;
-      cursor: not-allowed;
-    }
-  }
-
-  &__counter {
-    font-family: var(--font-display);
-    font-size: 0.88rem;
-    font-weight: 700;
-    color: var(--muted);
-    min-width: 52px;
-    text-align: center;
-  }
-
-  &__track-wrapper {
-    overflow: hidden;
-  }
-
-  &__track {
-    display: flex;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    will-change: transform;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__card {
-    flex: 0 0 calc(50% - 0.75rem);
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
@@ -997,10 +945,6 @@ button {
     &:hover {
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
       transform: translateY(-4px);
-    }
-
-    @media (max-width: 768px) {
-      flex: 0 0 calc(100% - 0rem);
     }
   }
 
@@ -1033,6 +977,21 @@ button {
     font-size: 3rem;
     font-weight: 800;
     color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__img-wrap--observer {
+    background: linear-gradient(135deg, #1A6B45, #68C893);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__observer-label {
+    font-family: var(--font-display);
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: -0.04em;
   }
 
   &__card-body {
